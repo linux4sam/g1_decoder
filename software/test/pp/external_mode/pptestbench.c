@@ -74,7 +74,7 @@ typedef struct
 static ppContainer pp = { NULL, NULL, 0, 0 };
 
 /* Kernel driver for linear memory allocation of SW/HW shared memories */
-const char *memdev = "/tmp/dev/memalloc";
+const char *memdev = "/dev/memalloc";
 static int memdev_fd = -1;
 static int fd_mem = -1;
 

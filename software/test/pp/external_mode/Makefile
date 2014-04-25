@@ -47,7 +47,8 @@ INCLUDE = -I../../../source/inc -I../../../source/pp/ -I../../../source/config \
           -I../../../source/common  -I../../common/swhw -I../../../linux/memalloc/
 
 DECLIBDIR = -L../../../linux/dwl -L../../../linux/pp -L../../common/swhw \
-            -L../../../../system/models/golden -L../../common/utils
+            -L../../../../system/models/golden -L../../common/utils \
+	    -L../../../linux/h264high -L../../../linux/jpeg -L../../../linux/mpeg4
 DECLIB =  libdecx170p.a
 DWLLIB = libdwlx170.a
 TBLIB = libtbcommon.a
@@ -82,10 +83,11 @@ all: versatile
 
 .PHONY: versatile
 versatile: CC=arm-none-linux-gnueabi-gcc
-versatile: CFLAGS = -O -g -mtune=arm926ej-s -fpic $(INCLUDE) $(MD5SUM) -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE 
+versatile: CFLAGS = -O -g -mtune=cortex-a5 -march=armv7-a -fpic $(INCLUDE) $(MD5SUM) -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE
 versatile: TESTDEC=px170dec_versatile
 versatile: TARGET_ENV=versatile
-versatile: LIBS = $(DECLIBDIR) -lpthread -ldecx170p -ldwlx170 -ltbcommon -lutils $(EFENCE) $(MD5SUM)
+versatile: _PRODUCT_G1 = y
+versatile: LIBS = $(DECLIBDIR) -lpthread -ldecx170p -ldwlx170 -ltbcommon -lutils -ldecx170h -lx170j -ldecx170m $(EFENCE) $(MD5SUM)
 versatile: test
 
 
