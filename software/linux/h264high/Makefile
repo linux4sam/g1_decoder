@@ -224,7 +224,7 @@ pclinux_eval: $(DECLIB)
 pclinux_eval: CC=gcc
 
 versatile: CROSS = arm-none-linux-gnueabi-
-versatile: ARCH = -mtune=arm926ej-s
+versatile: ARCH = -mtune=cortex-a5 -march=armv7-a -fpic
 versatile: $(DECLIB)
 
 linaro: CROSS = arm-linux-gnueabi-
