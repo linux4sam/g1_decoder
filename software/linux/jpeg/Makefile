@@ -180,11 +180,8 @@ integrator: CROSS_COMPILER = arm-linux-
 integrator: $(DECLIB)
 
 .PHONY: versatile
-versatile: ENVSET  = -DSDRAM_LM_BASE=0x00000000 \
-                     -DDEC_MODULE_PATH=\"/dev/hx170dec\" \
-                     -DDEC_IO_BASE=0xC0000000
 versatile: CROSS_COMPILER = arm-none-linux-gnueabi-
-versatile: ARCH = -mtune=arm926ej-s -fpic
+versatile: ARCH = -mtune=cortex-a5 -march=armv7-a -fpic
 versatile: $(DECLIB)
 
 .PHONY: pclinux_eval
