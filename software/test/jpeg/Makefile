@@ -75,8 +75,7 @@ all: versatile
 
 .PHONY: versatile
 versatile: CC=arm-none-linux-gnueabi-gcc
-versatile: CFLAGS += -O -g -mtune=arm926ej-s -fpic $(INCLUDE) -DLINUX -DSDRAM_LM_BASE=0x00000000 \
-                      -DDEC_MODULE_PATH=\"/dev/hx170dec\" -DDEC_IO_BASE=0xC0000000
+versatile: CFLAGS += -O -g -mtune=cortex-a5 -march=armv7-a -fpic $(INCLUDE) -DLINUX
 versatile: TESTDEC=jx170dec_versatile
 versatile: TARGET_ENV=versatile
 versatile: LIBS = $(DECLIBDIR) -lpthread -lx170j -ldwlx170 -ltbcommon -lutils $(EFENCE)
