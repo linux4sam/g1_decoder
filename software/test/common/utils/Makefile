@@ -49,6 +49,8 @@ else
 DEFINES=-DFIFO_DATATYPE=i32
 endif
 
+CC=arm-none-linux-gnueabi-gcc -fpic
+
 .PHONY: all
 all: lib
 
