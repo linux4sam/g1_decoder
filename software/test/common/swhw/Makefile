@@ -136,7 +136,7 @@ pclinux_eval: $(LIB)
 coverage: pclinux
 
 versatile: CROSS = arm-none-linux-gnueabi-
-versatile: ARCH = -mtune=arm926ej-s
+versatile: ARCH = -mtune=cortex-a5 -march=armv7-a -fpic
 versatile: $(LIB)
 
 linaro: CROSS = arm-linux-gnueabi-
