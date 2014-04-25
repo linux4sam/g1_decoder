@@ -178,7 +178,7 @@ integrator: ARCH = -march=armv4 -mtune=arm9tdmi -fpic
 integrator: $(DECLIB)
 
 versatile: CROSS_COMPILER = arm-none-linux-gnueabi-
-versatile: ARCH = -mtune=arm926ej-s -fpic
+versatile: ARCH = -mtune=cortex-a5 -march=armv7-a -fpic
 versatile: $(DECLIB)
 
 versatile_plain_lib: CROSS_COMPILER = arm-linux-
