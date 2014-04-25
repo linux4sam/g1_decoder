@@ -211,10 +211,10 @@ coverage: $(DECLIB)
 	make -C ../../../system/models/golden
 
 
-versatile: ENVSET  = -DDEC_MODULE_PATH=\"/tmp/dev/hx170\" \
-                     -DMEMALLOC_MODULE_PATH=\"/tmp/dev/memalloc\"
+versatile: ENVSET  = -DDEC_MODULE_PATH=\"/dev/hx170\" \
+                     -DMEMALLOC_MODULE_PATH=\"/dev/memalloc\"
 versatile: CROSS = arm-none-linux-gnueabi-
-versatile: ARCH = -mtune=arm926ej-s
+versatile: ARCH = -mtune=cortex-a5 -march=armv7-a -fpic
 versatile: $(DECLIB)
 
 linaro: ENVSET  = -DDEC_MODULE_PATH=\"/tmp/dev/hx170\" \
