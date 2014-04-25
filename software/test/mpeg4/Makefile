@@ -89,7 +89,7 @@ all: versatile
 
 .PHONY: versatile
 versatile: CC=arm-none-linux-gnueabi-gcc
-versatile: CFLAGS += -O -g -mtune=arm926ej-s -fpic $(INCLUDE) $(MD5SUM) -D_LARGEFILE64_SOURCE
+versatile: CFLAGS += -O -g -mtune=cortex-a5 -march=armv7-a -fpic $(INCLUDE) $(MD5SUM) -D_LARGEFILE64_SOURCE
 versatile: TESTDEC=mx170dec_versatile
 versatile: TARGET_ENV=versatile
 versatile: LIBS = $(DECLIBDIR) -lpthread -ldecx170m -ldwlx170 -ltbcommon -lutils $(EFENCE) $(MD5SUM)
