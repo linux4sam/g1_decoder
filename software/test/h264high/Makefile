@@ -56,13 +56,13 @@ ifneq (,$(findstring pclinux,$(MAKECMDGOALS)))
 	SYSROOT=/auto/hantro-projects/sw-codecs/libav/i386
 else
 	# arm libav
-	SYSROOT=/auto/hantro-projects/sw-codecs/libav/arm
+	SYSROOT=../../../../libav/_install
 endif
 PKG_CONFIG_SYSROOT_DIR=$(SYSROOT)
-PKG_CONFIG_LIBDIR="$(SYSROOT)/usr/local/lib/pkgconfig"
+PKG_CONFIG_LIBDIR="$(SYSROOT)/lib/pkgconfig"
 
-LIBAV_CFLAGS=$(shell PKG_CONFIG_SYSROOT_DIR="$(PKG_CONFIG_SYSROOT_DIR)" PKG_CONFIG_LIBDIR="$(PKG_CONFIG_LIBDIR)" pkg-config --cflags libavcodec libavformat libavutil)
-LIBAV_LIBS=$(shell PKG_CONFIG_SYSROOT_DIR="$(PKG_CONFIG_SYSROOT_DIR)" PKG_CONFIG_LIBDIR="$(PKG_CONFIG_LIBDIR)" pkg-config --libs libavcodec libavformat libavutil)
+LIBAV_CFLAGS=$(shell PKG_CONFIG_DIR="$(PKG_CONFIG_SYSROOT_DIR)" PKG_CONFIG_LIBDIR="$(PKG_CONFIG_LIBDIR)" pkg-config --cflags libavcodec libavformat libavutil)
+LIBAV_LIBS=$(shell PKG_CONFIG_DIR="$(PKG_CONFIG_SYSROOT_DIR)" PKG_CONFIG_LIBDIR="$(PKG_CONFIG_LIBDIR)" pkg-config --libs libavcodec libavformat libavutil)
 
 DECLIB = libdecx170h.a
 DWLLIB = libdwlx170.a
