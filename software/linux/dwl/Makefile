@@ -211,7 +211,7 @@ coverage: $(DECLIB)
 	make -C ../../../system/models/golden
 
 
-versatile: ENVSET  = -DDEC_MODULE_PATH=\"/dev/hx170\" \
+versatile: ENVSET  = -DDEC_MODULE_PATH=\"/dev/vdec\" \
                      -DMEMALLOC_MODULE_PATH=\"/dev/memalloc\"
 versatile: CROSS = arm-none-linux-gnueabi-
 versatile: ARCH = -mtune=cortex-a5 -march=armv7-a -fpic
