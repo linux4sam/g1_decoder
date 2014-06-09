@@ -139,6 +139,18 @@ const void *DWLInit(DWLInitParam_t * param)
     }
     }
 
+    if(ioctl(dec_dwl->fd, HX170DEC_IOC_MC_CORES,  &dec_dwl->numCores) == -1)
+    {
+        DWL_DEBUG("ioctl HX170DEC_IOC_MC_CORES failed\n");
+        goto err;
+    }
+
+    if(ioctl(dec_dwl->fd, HX170DEC_IOCGHWIOSIZE, &dec_dwl->regSize) == -1)
+    {
+        DWL_DEBUG("ioctl HX170DEC_IOCGHWIOSIZE failed\n");
+        goto err;
+    }
+
     DWL_DEBUG("SUCCESS\n");
 
     return dec_dwl;
