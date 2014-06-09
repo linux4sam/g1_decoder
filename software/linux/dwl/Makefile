@@ -71,8 +71,8 @@ ifeq ($(INTERNAL_TEST),y)
    SRCS +=internal_test.c
 endif
 
-# 2 cores supported by default
-CORES ?= 2
+# single cores only
+SC_SW_ONLY = y
 
 # system independent code location
 COMMON_SOURCE_DIR = ../../source
