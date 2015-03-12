@@ -223,7 +223,7 @@ void PPInitHW(PPContainer * ppC)
 #if ( PP_X170_INTERNAL_CLOCK_GATING != 0 )
     SetPpRegister(ppRegs, HWIF_PP_CLK_GATE_E, 1);
 #else
-    SetPpRegister(ppRegs, HWIF_PP_CLK_GATE_E, 0);
+    SetPpRegister(ppRegs, HWIF_PP_CLK_GATE_E, 1);
 #endif
 
     /* set AXI RW IDs */

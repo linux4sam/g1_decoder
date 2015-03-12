@@ -135,7 +135,7 @@ void SetCommonConfigRegs(u32 *pRegs)
 #if( DEC_X170_INTERNAL_CLOCK_GATING != 0)
     SetDecRegister(pRegs, HWIF_DEC_CLK_GATE_E, 1);
 #else
-    SetDecRegister(pRegs, HWIF_DEC_CLK_GATE_E, 0);
+    SetDecRegister(pRegs, HWIF_DEC_CLK_GATE_E, 1);
 #endif
 
 #if( DEC_X170_USING_IRQ  == 0)

@@ -124,7 +124,7 @@
 
 #ifndef PP_X170_INTERNAL_CLOCK_GATING
 /* clock is gated from PP structures that are not used */
-#define PP_X170_INTERNAL_CLOCK_GATING               0
+#define PP_X170_INTERNAL_CLOCK_GATING               1
 #endif
 
 #ifndef PP_X170_DATA_DISCARD_ENABLE

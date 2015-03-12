@@ -105,7 +105,7 @@
 
 #ifndef DEC_X170_INTERNAL_CLOCK_GATING
 /* clock is gated from decoder structures that are not used */
-#define DEC_X170_INTERNAL_CLOCK_GATING              0
+#define DEC_X170_INTERNAL_CLOCK_GATING              1
 #endif
 
 #ifndef DEC_X170_OUTPUT_FORMAT
