@@ -1,0 +1,265 @@
+--------------------------------------------------------------------------------
+--                                                                            --
+--           This confidential and proprietary software may be used           --
+--              only as authorized by a licensing agreement from              --
+--                                                                            --
+--                            Verisilicon Inc.                                --
+--                                                                            --
+--      In the event of publication, the following notice is applicable:      --
+--                                                                            --
+--                   (C) COPYRIGHT 2017 VERISILICON INC                       --
+--                            ALL RIGHTS RESERVED                             --
+--                                                                            --
+--    The entire notice above must be reproduced on all authorized copies.    --
+--                                                                            --
+--------------------------------------------------------------------------------
+--                                                                            --
+--  File Name           : release_note_Verisilicon-Atmel.txt                  --
+--                                                                            --
+--  Abstract            : Release note & TOC.                                 --
+--                                                                            --
+--------------------------------------------------------------------------------
+==================================================
+ Date: 2017-11-10
+ Contents of Relg1_3_2_Verisilicon-Atmel
+==================================================
+  Code license update.
+
+
+==================================================
+ Date: 2013-08-07
+ Contents of Relg1_3_1_Verisilicon-Atmel
+==================================================
+  1. List of changes compared to previous release 
+  ------------------------------------------------
+     SW update to GoldenG1_6_32
+
+  2. Contents of the release
+  ------------------------------------------------
+    General Release settings:
+    .........................
+    HW language: 
+    Include reference scripts for synthesis: no
+
+    Contents of the release:
+    ........................
+    With HW contents: 
+
+    With SYS Binaries: no
+
+    With HW Test contents: 
+
+    With SW contents :
+    common_sw_source h264_sw_source mpeg4_sw_source jpeg_sw_source vp8_sw_source pp_sw_source
+
+    With SW Test contents:
+    swhw_test h264_sw_test mpeg4_sw_test jpeg_sw_test vp8_sw_test pp_sw_test
+
+    Include RM parser to RV test bench: no
+
+    Include Docs: no
+
+
+    With the following internal tags:
+    .................................
+    HW: cfg_hwg1_2_88_h264hp_mvc_mp4asp_jpeg_vp8_pp_adedis_d1280_p1280_ahb
+    SW: GoldenG1_6_32
+
+    Release tag settings:
+    .....................
+    Release tag: Relg1_3_1_Verisilicon-Atmel
+    Date: 2013-08-07
+    
+==================================================
+ Date: 2012-05-24
+ Contents of Relg1_3_0_Verisilicon-Atmel
+==================================================
+  1. List of changes compared to previous release 
+  ------------------------------------------------
+     Updated release fixing problem in VP8 decoding
+     Also adding MPEG4 ASP
+
+  2. Contents of the release
+  ------------------------------------------------
+    General Release settings:
+    .........................
+    HW language: verilog
+    Include reference scripts for synthesis: yes
+
+    Contents of the release:
+    ........................
+    With HW contents: rtl_hierarchy rtl_core toplevel_ahb rom_codes
+
+    With SYS Binaries: no
+
+    With HW Test contents: ahb_verilog
+
+    With SW contents :
+    common_sw_source h264_sw_source mpeg4_sw_source jpeg_sw_source vp8_sw_source pp_sw_source
+
+    With SW Test contents:
+    swhw_test h264_sw_test mpeg4_sw_test jpeg_sw_test vp8_sw_test pp_sw_test
+
+    Include RM parser to RV test bench: no
+
+    Include Docs: yes
+
+
+    With the following internal tags:
+    .................................
+    HW: cfg_hwg1_2_88_h264hp_mvc_mp4asp_jpeg_vp8_pp_adedis_d1280_p1280_ahb
+    SW: GoldenG1_0_164_b
+
+    Release tag settings:
+    .....................
+    Release tag: Relg1_3_0_Verisilicon-Atmel
+    Date: 2012-05-24
+
+
+==================================================
+ Date: 2012-02-23
+ Contents of Relg1_2_0_Verisilicon-Atmel
+==================================================
+  1. List of changes compared to previous release 
+  ------------------------------------------------  
+    - Removed MPEG4_ASP from the config.
+    - SW update to its latest revision.
+    - RTL code clean up.
+
+  2. Contents of the release
+  ------------------------------------------------
+    General Release settings:
+    .........................
+    HW language: verilog
+    Include reference scripts for synthesis: yes
+
+    Contents of the release:
+    ........................
+    With HW contents: rtl_hierarchy rtl_core toplevel_ahb rom_codes
+
+    With SYS Binaries: no
+
+    With HW Test contents: ahb_verilog
+
+    With SW contents :
+    common_sw_source h264_sw_source mpeg4_sw_source jpeg_sw_source vp8_sw_source pp_sw_source
+
+    With SW Test contents:
+    swhw_test h264_sw_test mpeg4_sw_test jpeg_sw_test vp8_sw_test pp_sw_test
+
+    Include RM parser to RV test bench: no
+
+    Include Docs: yes
+
+
+    With the following internal tags:
+    .................................
+    HW: cfg_hwg1_2_86_h264hp_mvc_jpeg_vp8_pp_adedis_d1280_p1280_ahb
+    SW: GoldenG1_0_150_b
+
+    Release tag settings:
+    .....................
+    Release tag: Relg1_2_0_Verisilicon-Atmel
+    Date: 2012-02-23
+
+==================================================
+ Date: 2011-12-19
+ Contents of Relg1_1_0_Verisilicon-Atmel
+==================================================
+  1. List of changes compared to previous release 
+  ------------------------------------------------
+  
+  - The first release
+
+
+  2. Contents of the release
+  ------------------------------------------------
+    General Release settings:
+    .........................
+    HW language: verilog
+    Include reference scripts for synthesis: yes
+
+    Contents of the release:
+    ........................
+    With HW contents: rtl_hierarchy rtl_core toplevel_ahb rom_codes
+
+    With SYS Binaries: no
+
+    With HW Test contents: ahb_verilog
+
+    With SW contents :
+    common_sw_source h264_sw_source mpeg4_sw_source jpeg_sw_source vp8_sw_source pp_sw_source
+
+    With SW Test contents:
+    swhw_test h264_sw_test mpeg4_sw_test jpeg_sw_test vp8_sw_test pp_sw_test
+
+    Include RM parser to RV test bench: no
+
+    Include Docs: yes
+    Docs file: g1_decoder/customer_docs/g1v2_customer_docs.tar.gz
+
+
+    With the following internal tags:
+    .................................
+    HW: cfg_hwg1_2_85_h264hp_mvc_mp4asp_jpeg_vp8_pp_adedis_d1280_p1280_ahb
+    SW: GoldenG1_0_139_b
+
+    Release tag settings:
+    .....................
+    Release tag: Relg1_1_0_Verisilicon-Atmel
+    Date: 2011-12-19
+	
+  3. Test data
+  ------------------------------------------------
+    * To be released in a separate package.
+
+  4. Release Folder Hierarchy
+  ------------------------------------------------
+  	               
+    - RTL codes can be found from release/hw folder
+
+    - HW test bench from hardware/sims folder
+
+    - SW source codes, linux reference implementation and  
+      test bench from software
+
+    - Customer docs: HW integration guides, SW integartion guides,
+      API manuals, ram/rom summary files.
+
+      g1_decoder
+         |
+         + customer_docs
+         |
+         + release
+         |   |
+         |   + hw
+         |     |
+         |     + verilog
+         |
+         |
+         + hardware
+         |   |
+         |   + sims
+         |      |
+         |      + top
+         |      |
+         |      + ARM
+         |
+         |
+         + software
+            |
+            + source
+            |
+            + linux
+            |
+            + test
+
+  5. Known Limitations
+  ------------------------------------------------
+
+    * None
+     
+  6. Contact Information:
+  ------------------------------------------------
+    In technical issues, please contact:
+    hantro-support@verisilicon.com
