@@ -1247,7 +1247,7 @@ void VP8HwdAsicFlushRegs(VP8DecContainer_t * pDecCont)
 
 #ifdef TRACE_START_MARKER
     /* write ID register to trigger logic analyzer */
-    DWLWriteReg(pDecCont->dwl, 0x00, ~0);
+    DWLWriteReg(pDecCont->dwl, pDecCont->coreID, 0x00, ~0U);
 #endif
 
     decRegs[0] &= ~decRegs[0];
