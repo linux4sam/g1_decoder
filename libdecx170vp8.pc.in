@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: vp8 decoder library
+Description: vp8 decoder library for Microchip sama5d4 SOC.
+Version:@PACKAGE_VERSION@
+Libs: -L${libdir} -ldecx170vp8
+Cflags: -I${includedir} -I${includedir}/g1decoder

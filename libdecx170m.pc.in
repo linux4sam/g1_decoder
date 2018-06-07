@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: mp3g4/h263 decoder library
+Description: mp3g4/h263 decoder library for Microchip sama5d4 SOC.
+Version:@PACKAGE_VERSION@
+Libs: -L${libdir} -ldecx170m 
+Cflags: -I${includedir} -I${includedir}/g1decoder

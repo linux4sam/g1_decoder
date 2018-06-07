@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: jpeg decoder library
+Description: jpeg decoder library for Microchip sama5d4 SOC.
+Version:@PACKAGE_VERSION@
+Libs: -L${libdir} -lx170j
+Cflags: -I${includedir} -I${includedir}/g1decoder
